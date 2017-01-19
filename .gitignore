@@ -1,4 +1,5 @@
 /MNIST_data
+/.idea
 *.xml
 *.iml
 # Created by .ignore support plugin (hsz.mobi)
