@@ -143,7 +143,7 @@ def input_fn(df):
       k: tf.SparseTensor(
           indices=[[i, 0] for i in range(df[k].size)],
           values=df[k].values,
-          dense_shape=[df[k].size, 1])
+          shape=[df[k].size, 1]) #dense_shape in future version of API.  Had to edit this from code available on github
       for k in CATEGORICAL_COLUMNS}
   # Merges the two dictionaries into one.
   feature_cols = dict(continuous_cols)
